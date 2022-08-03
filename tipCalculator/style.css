@@ -58,7 +58,7 @@
     padding: 1rem;
 }
 
-label {
+label, .result {
     position: relative;
     font-size: 1.3rem;
 }
