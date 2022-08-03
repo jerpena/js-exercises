@@ -1,0 +1,12 @@
+{
+  "name": "tipcalculator",
+  "version": "1.0.0",
+  "description": "Calculate your tip",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jeremy Pena",
+  "license": "ISC"
+}
