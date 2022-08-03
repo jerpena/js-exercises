@@ -44,22 +44,16 @@ PSEUDOCODE:
     display tip with "Your tip is: $tip"
     display totalBill with "Which brings the total to: $totalBill"
 */
-import * as readline from 'node:readline/promises';
-import { stdin as input, stdout as output } from 'node:process';
-const rl = readline.createInterface({ input, output });
+const form = document.querySelector('.form')
 
-
-let billAmount = await rl.question("How much is your bill? ")
-let tipRate = await rl.question("How much do you want to tip? ")
-let tip = 0;
-let totalBill = 0;
-
-billAmount = Number(billAmount)
-tipRate = Number(tipRate)
-tip = Number((billAmount * (tipRate / 100)).toFixed(2))
-totalBill = billAmount + tip
-
-console.log(`Your tip is: ${tip}`)
-console.log(`The total is: ${totalBill}`)
-
-rl.close();
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const {bill: billInput, tip: tipInput} = event.currentTarget
+    let tip = 0;
+    let totalBill = 0;
+    const billAmount = Number(billInput.value)
+    const tipRate = Number(tipInput.value)
+    tip = (billAmount * (tipRate / 100)).toFixed(2)
+    totalBill = billAmount + Number(tip);
+    console.log(tip, totalBill)
+});
