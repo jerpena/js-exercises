@@ -56,4 +56,4 @@ display totalBill with "Which brings the total to: $totalBill"
 - [ ] Don’t allow the user to enter a negative number.
 - [ ] Break the program into functions that do the computations
 - [x] Implement GUI that automatically updates the values when any value changes.
-- [ ] Instead of the user entering the value of the tip as a percentage, have the user drag a slider that rates satisfaction with the server, using a range between 5% and 20%.
+- [x] Instead of the user entering the value of the tip as a percentage, have the user drag a slider that rates satisfaction with the server, using a range between 5% and 20%.
