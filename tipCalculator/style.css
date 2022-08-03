@@ -1,0 +1,89 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+/* END CSS Reset */
+
+.container {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    background-color: rgb(233, 231, 231);
+}
+
+.form {
+    width: 300px;
+    background-color: rgb(232, 221, 236);
+    border-radius: 5px;
+
+}
+.form, .submit {
+    border: 1px solid rgb(180, 179, 179);
+}
+
+.form, .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    padding: 1rem;
+}
+
+label {
+    position: relative;
+    font-size: 1.3rem;
+}
+
+input {
+    width: 10rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.submit {
+    background-color: rgb(221, 163, 241);
+    height: 3rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid ;
+    transition-duration: 0.2s;
+    padding: 0 2.4rem;
+}
+
+.submit:hover {
+    background-color: rgba(221, 163, 241, 0);
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24), 0 8px 50px 0 rgba(0,0,0,0.19);
+}
+
+.submit:active {
+    transform: translateY(2px);
+}
