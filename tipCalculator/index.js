@@ -3,9 +3,19 @@
     tip percentage. The program then will compute the tip and display both the tip 
     and total amount of the bill. 
 
-inputs: bill amount, tip percentage
-processes: calculate tip amount
-output: tip amount, total bill
+EXTRA CHALLENGES:
+    1 Ensure that the user can enter only numbers for the bill amount and the tip rate. 
+    2 Keep asking the user for correct input until it is provided.
+    3 Don’t allow the user to enter a negative number.
+    4 Break the program into functions that do the computations
+    5 Implement GUI that automatically updates the values when any value changes.
+    6 Instead of the user entering the value of the tip as a percentage, have the user drag 
+    a slider that rates satisfaction with the server, using a range between 5% and 20%.
+
+INPUTS/PROCESSES/OUTPUTS: 
+    inputs: bill amount, tip percentage
+    processes: calculate tip amount
+    output: tip amount, total bill
 
 TESTS:
     inputs:
