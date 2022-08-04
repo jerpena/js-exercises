@@ -1,0 +1,12 @@
+{
+  "name": "printingquotes",
+  "version": "1.0.0",
+  "description": "Print quotes and their author using escape characters to display quote marks",
+  "main": "cli.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Pena",
+  "license": "ISC"
+}
