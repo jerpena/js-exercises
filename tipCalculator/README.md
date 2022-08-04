@@ -51,9 +51,9 @@ display totalBill with "Which brings the total to: $totalBill"
 
 
 ## Extra Challenges
-- [ ] Ensure that the user can enter only numbers for the bill amount and the tip rate.
-- [ ] Keep asking the user for correct input until it is provided.
-- [ ] Don’t allow the user to enter a negative number.
+- [x] Ensure that the user can enter only numbers for the bill amount and the tip rate.
+- [x] Keep asking the user for correct input until it is provided.
+- [x] Don’t allow the user to enter a negative number.
 - [x] Break the program into functions that do the computations
 - [x] Implement GUI that automatically updates the values when any value changes.
 - [x] Instead of the user entering the value of the tip as a percentage, have the user drag a slider that rates satisfaction with the server, using a range between 5% and 20%.

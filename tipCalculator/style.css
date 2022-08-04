@@ -87,3 +87,7 @@ input {
 .submit:active {
     transform: translateY(2px);
 }
+
+.error {
+  border: 2px solid red;
+}

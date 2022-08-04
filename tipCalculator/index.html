@@ -15,7 +15,7 @@
             </div>
             <div class="form-group">
               <label class="label" for="bill">Bill amount: </label>
-              <input type="text" name="billInput" id="billInput">
+              <input type="number" step="0.01"name="billInput" id="billInput">
             </div>
             <div class="form-group">
                 <label class="label" for="tip">Rate your server:</label>
@@ -27,7 +27,7 @@
                 <p class="label">Bill total: <span id="totalAmount">0.00</span></p>
             </div>
             <div class="form-group">
-              <button class="submit">Calculate</button>
+              <button class="submit" id="submit">Calculate</button>
             </div>
           </form>
     </div>

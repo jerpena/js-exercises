@@ -17,6 +17,7 @@ const calculateTip = (billAmount, tipRate) => {
 
 const calculateTotal = (billAmount, tip) => billAmount + tip
 
+
 const handleForm = event => {
     event.preventDefault();
     const {billInput, tipInput} = form
@@ -25,6 +26,12 @@ const handleForm = event => {
     let tip = 0;
     let totalBill = 0;
 
+    if (!isValidNumber(billAmount)) {
+        return showError(billInput)
+    } else {
+        resetError(billInput)
+    }
+
     tip = calculateTip(billAmount, tipRate)
     totalBill = calculateTotal(billAmount, tip)
 
@@ -32,13 +39,20 @@ const handleForm = event => {
     totalBillOutput.textContent = currency.format(totalBill)
 }
 
-const isValidNumber = value => {
-    return Math.sign(value)
+const showError = target => {
+    target.classList.add('error')
 }
 
-const handleInput = event => {
+const resetError = target => {
+    target.classList.remove('error')
+}
+
+const isValidNumber = value => {
+    return value > 0
+}
+
+const handleInput = ({target}) => {
     rangeOutput.textContent = range.value;
-    
 }
 
 form.addEventListener("submit", handleForm);
