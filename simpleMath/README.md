@@ -145,4 +145,4 @@ Display buildCalculationString
 - [x] Revise the program to ensure that inputs are entered as numeric values. Don't allow the user to proceed if the value entered is not numeric.
 - [x] Don't allow the user to enter a negative number.
 - [x] Break the program into functions that do the computations. 
-- [ ] Implement this program as a GUI program that automatically updates the values when any of them change.
+- [x] Implement this program as a GUI program that automatically updates the values when any of them change.
