@@ -38,7 +38,7 @@ const map = new Map([
     ['*', getProduct(num1, num2)],
     ['/', getQuotient(num1, num2)],
 ])
-
+console.log(map)
 const buildCalculationString = (num1, num2, map) => {
     let calcString = '\n'
     for (const [key, value] of map) {
