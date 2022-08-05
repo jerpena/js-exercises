@@ -18,3 +18,4 @@ Clone the repo to your computer and open the index.html file in the respective f
 1. [Tip Calculator](https://github.com/jerpena/js-exercises/tree/main/tipCalculator)
 2. [Count Characters](https://github.com/jerpena/js-exercises/tree/main/countCharacters)
 3. [Printing Quotes](https://github.com/jerpena/js-exercises/tree/main/printingQuotes)
+4. [Mad Lib](https://github.com/jerpena/js-exercises/tree/main/madLib)

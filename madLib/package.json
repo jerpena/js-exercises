@@ -1,0 +1,12 @@
+{
+  "name": "madlib",
+  "version": "1.0.0",
+  "description": "Simple mad-lib program that prompts users for input ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Pena",
+  "license": "ISC"
+}
