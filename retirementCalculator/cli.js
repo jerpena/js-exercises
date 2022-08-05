@@ -17,5 +17,11 @@ You have ${yearsToRetirement} years left until you can retire.
 It's ${currentYear}, so you can retire in ${retirementYear}
 
 `
+const overdueMessage = `
+You SHOULD HAVE retired ${Math.abs(yearsToRetirement)} years ago.
 
-console.log(message)
+It's ${currentYear}, your retirement year was ${retirementYear}. Get with the program!
+
+`
+
+console.log(yearsToRetirement < 0 ? overdueMessage : message)
