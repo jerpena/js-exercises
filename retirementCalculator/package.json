@@ -1,0 +1,12 @@
+{
+  "name": "retirementcalculator",
+  "version": "1.0.0",
+  "description": "Program that takes your age and the age you want to retire at as input. It then displays how many years left to retirement and the year you can retire.",
+  "main": "cli.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy PEna",
+  "license": "ISC"
+}
