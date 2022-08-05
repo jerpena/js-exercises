@@ -7,7 +7,7 @@ Write a program that prompts for two numbers. Print the sum, difference, product
 * Values will be input as strings, Ensure you convert to numbers before doing math.
 * Keep inputs and outputs separate from the numerical conversions and other processing.
 * Generate single output statement with line breaks in the appropriate spots.
-* 
+
 ## Inputs, Processes, and Outputs
 
 ```text
@@ -91,7 +91,7 @@ rl.close()
 ### **Revised w/ challenges**
 
 ```text
-nitialize readline with node:readline/promises
+Initialize readline with node:readline/promises
 Initialize stdin, stdout with node:process
 Initialize rl with readline.createInterface(stdin stdout)
 
