@@ -21,3 +21,4 @@ Clone the repo to your computer and open the index.html file in the respective f
 4. [Mad Lib](https://github.com/jerpena/js-exercises/tree/main/madLib)
 5. [Simple Math](https://github.com/jerpena/js-exercises/tree/main/simpleMath)
 6. [Retirement Calculator](https://github.com/jerpena/js-exercises/tree/main/retirementCalculator)
+7. [Area of Rectangular Room](https://github.com/jerpena/js-exercises/tree/main/areaRectangle)
