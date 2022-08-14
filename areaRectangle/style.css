@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+legend,
+#output {
+    font-weight: medium;
+    font-size: 1.3rem;
+    max-width: 446px;
+}
+
+input[type='text'] {
+    margin-bottom: 1rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    ;
+}
+
+input[type='radio'] {
+    margin: .5rem;
+}
+
+fieldset {
+    margin: .5rem 0 2rem 0;
+}
