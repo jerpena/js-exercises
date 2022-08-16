@@ -4,6 +4,8 @@ const rl = readline.createInterface({ input: stdin, output: stdout });
 
 const SLICES_PER_PIZZA = 8;
 
+const isValidInput = input => input > 0 && !isNaN(input);
+
 const getInput = async () => {
     let slicesPerPerson = 1, numPizza = 0;
     let hasPizza = await rl.question('Do you already have a pizza? (y,n) ');
@@ -17,14 +19,14 @@ const getInput = async () => {
     }
 
     const numPeople = Number(await rl.question('How many people? '));
-    if (!(numPeople > 0 && !isNaN(numPeople))) return process.exit();
+    if (!isValidInput(numPeople)) return process.exit();
 
     if (hasPizza) {
         slicesPerPerson = Number(await rl.question('How many slices per person? '));
-        if (!(slicesPerPerson > 0 && !isNaN(slicesPerPerson))) return process.exit();
+        if (!isValidInput(slicesPerPerson)) return process.exit();
     } else {
         numPizza = Number(await rl.question('How many pizzas? '));
-        if (!(numPizza > 0 && !isNaN(numPizza))) return process.exit();
+        if (!isValidInput(numPizza)) return process.exit();
     }
 
     const totalSlices = hasPizza ? numPeople * slicesPerPerson : numPizza * SLICES_PER_PIZZA;

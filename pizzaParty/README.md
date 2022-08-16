@@ -81,27 +81,71 @@ function displayMessage(message)
 import readline
 import stdin, stdout
 Initialize rl with readline.createInterface
+Initialize SLICES_PER_PIZZA with 8
+
+function isValidInput 
+    return input > 0 && !isNaN(input)
+
 
 async function getInput
-    Initialize hasPizza with "Have you bought the pizza already? "
-    Initialize numPeople with "How many people? "
-    if (hasPizza == true) Initialize slicesPerPerson with "How many slices does each person want? "
-    else Initialize numPizza with "How many pizzas do you have? "
+    Initialize slicesPerPerson with 1
+    Initialize numPizza with 0
+    Initialize hasPizza with "Have you bought the pizza already? (y,n) "
+    if hasPizza ! y || n
+        exit
+    else if hasPizza is y
+        hasPizza = true
+    else 
+        hasPizza = false
 
-    return obj {numPeople, numPizza, slicesPerPerson}
+    Initialize numPeople with "How many people? "
+    if !isValidInput(numPeople) return exit
+
+    if (hasPizza == true)
+        assign slicesPerPerson to "How many slices does each person want? "
+        if !isValidInput(slicesPerPerson) return exit
+    else 
+        assign numPizza to "How many pizzas do you have? "
+        if !isValidInput(numPizza) return exit
+    
+    Initialize totalSlices with hasPizza ? numPeople * slicesPerPerson : numPeople * SLICES_PER_PIZZA
+
+
+    return obj { hasPizza, numPeople, numPizza, totalSlices, slicesPerPerson }
 
 
 function calculateSlices
-    Initialize slicesPerPerson with slices / people rounded down
-    Initialize leftOverSlices with remainder of slices / people
-    return slicesPerPerson, leftOverSlices
+    Initialize obj
+    Initialize slicesPerPerson with Math.floor(totalSlices / numPeople)
+    Initialize leftOverSlices withtotalSlices % numPeople
+    return obj
 
 function calculatePizzas
-    Initialize numOfPizzas with slices * people 
+    Initialize obj with input
+    Initialize numPizza with Math.ceil(totalSlices / SLICES_PER_PIZZA)
+    Initialize leftOverSlices with (numPizza * SLICES_PER_PIZZA) % numPeople
+    return obj
 
 
-function displayMessage(message)
-    log to console $Message
+function displayMessage(input obj)
+    Initialize message with ""
+
+    if hasPizza 
+        message = `
+        ${numPeople} people with ${slicesPerPerson} ${slicesPerPerson !== 1 ? 'slices' : 'slice'} each.
+
+        You need to buy ${numPizza} ${numPizza !== 1 ? 'pizzas' : 'pizza'}
+
+        You will have ${leftOverSlices} leftover ${leftOverSlices !== 1 ? 'slices' : 'slice'}
+        `;
+    else 
+        message = slicesPerPerson === 0 ? `Not enough slices for everyone.` : `
+        ${numPeople} people with ${numPizza} ${numPizza !== 1 ? 'pizzas' : 'pizza'}
+
+        Each person gets ${slicesPerPerson} ${slicesPerPerson !== 1 ? 'pieces' : 'piece'} of pizza.
+
+        There are ${leftOverSlices} leftover ${leftOverSlices !== 1 ? 'pieces' : 'piece'}
+    display message
 
 ```
 ## Extra Challenges
